@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management Portal - Frontend</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-calendar-check"></i> Event Management Dashboard</h1>
+
+        <div class="form-section card">
+            <h2>Add New Event</h2>
+            <form id="addEventForm">
+                <input type="text" id="title" placeholder="Event Title (e.g., Q4 Planning)" required>
+                <div class="input-group">
+                    <input type="date" id="date" required>
+                    <input type="time" id="time">
+                </div>
+                <textarea id="description" placeholder="Description (e.g., Venue, Agenda, Attendees)" required></textarea>
+                <button type="submit" id="submitBtn">Save Event Locally</button>
+            </form>
+            <p id="message" class="hidden"></p>
+        </div>
+
+        <hr>
+
+        <div class="list-section">
+            <h2>Upcoming Events</h2>
+            <div id="eventsList" class="events-container">
+                <p id="loadingMsg">Loading saved events...</p>
+            </div>
+            <button id="clearBtn" class="clear-btn hidden">Clear All Local Events</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>   explain me the code step by step and imp points  
